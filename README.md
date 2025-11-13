@@ -19,7 +19,7 @@
 	各教师类型的具体参数设置如表2所示。其中，参数为正态分布时以N（μ，σ）表示。
  
 表2 教师类型相关参数
-Table 2 Teacher type related parameter
+
 <img width="1373" height="361" alt="image" src="https://github.com/user-attachments/assets/45a653cb-d20c-4316-8677-78dc8156b006" />
 
 （3）每周指标生成规则 
