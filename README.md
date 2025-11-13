@@ -24,34 +24,84 @@ Table 2 Teacher type related parameter
 
 （3）每周指标生成规则 
 
-	在18周的模拟中，每周t都会为每位教师生成一组结构化的行为特征，对于作业发布数量（ ）、发布的资料数量（ ）、学生提问的数量（ ）、教师回复的数量（ ）、总的学生人数S等指标，按不同教师类型采用正态分布的方式生成，其余指标计算方式如下：
-按时发布的作业数量 使用公式（18）计算。
-	 ,	(18)
-按时发布的资料数量 使用公式（19）计算。
-	 ,	(19)
-下载的资料数量Eₜ使用公式（20）（21）计算。
-	 ,	(20)
-	 	(21)
-其中，  为下载量衰减因子。 
-提交的作业数量 使用公式（22）（23）（24）计算。
-	 ,	(22)
-	 	(23)
-	 	(24)
-其中，  受按时发布的资料影响，n（0<n<1）为学生对课程的兴趣度系数。 
-按时批改的作业数量 使用公式（25）计算。
-	 ,	(25)
-出勤的学生人数 使用公式（26）（27）计算。
-	 ,	(26)
-	 ,	(27)
-其中，ϵ1∼N(0,0.03)，  为第t周的出勤率。t/T表示对教学周次进行归一化（如第9周/18周 = 0.5），用于后续模拟数据中的时间趋势。
-提问的学生人数 使用公式（28）（29）计算。
-	 ,	(28)
-	 .	(29)
+在18周的模拟中，每周t都会为每位教师生成一组结构化的行为特征，对于作业发布数量（ <img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/8e242e5f-8968-44ca-84ac-f7b3989f40b0" />
+）、发布的资料数量（<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/ca703a7a-2605-4853-8746-866653b91288" />
+ ）、学生提问的数量（<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/0df927db-c7b4-42f4-a65f-8b6d7ebc6d32" />
+ ）、教师回复的数量（<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/abf54937-1be5-4a5c-9ede-0eea45ac9817" />
+ ）、总的学生人数S等指标，按不同教师类型采用正态分布的方式生成，其余指标计算方式如下：
+ 
+按时发布的作业数量<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/04efd58d-9443-42f0-8494-01cbcb908961" />
+ 使用公式（18）计算。
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/efa27c8b-4f7f-4da3-99c8-ae96d5fc2d29" />,	(18)
+
+按时发布的资料数量<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/ca234ef1-e6ac-48be-baee-cd7e3e96ea4b" />
+使用公式（19）计算。
+
+<img width="90" height="22" alt="image" src="https://github.com/user-attachments/assets/35bd88eb-dcf0-45aa-a0e5-22684a7e4d9c" />,	(19)
+
+下载的资料数量<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/9e40c283-2ab9-45d9-9872-71e612ddd3e0" />
+使用公式（20）（21）计算。
+
+<img width="120" height="30" alt="image" src="https://github.com/user-attachments/assets/cecef2e8-6cc5-4b35-9972-fc5ab5cdbc81" />,	(20)
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/aaddb6c3-8995-45a8-ad13-b0572a070d5b" />,(21)
+
+其中，  <img width="45" height="25" alt="image" src="https://github.com/user-attachments/assets/8ec1ba19-12b5-4960-b625-c76f95b9b1ee" />
+为下载量衰减因子。 
+
+
+提交的作业数量<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/3abd6954-9d91-4dbf-8037-a5d26f4b0f02" />
+使用公式（22）（23）（24）计算。
+
+<img width="110" height="25" alt="image" src="https://github.com/user-attachments/assets/17ae0a10-855f-4307-a8f8-02a6d571367e" />,	(22)
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/cd046bb6-addb-4665-b8df-290faaf35838" />, (23)
+
+<img width="70" height="20" alt="image" src="https://github.com/user-attachments/assets/a5b0a5eb-529d-46a7-a710-3e9122bde39c" />, (24) 
+
+其中，  <img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/53c0fd6b-c25c-410f-ac97-2b84784570d8" />
+受按时发布的资料影响，n（0<n<1）为学生对课程的兴趣度系数。 
+
+
+按时批改的作业数量<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/19e0244e-17a1-427b-b00f-df44cf379254" />
+使用公式（25）计算。
+
+<img width="110" height="35" alt="image" src="https://github.com/user-attachments/assets/c5c0e8ea-2498-4e1b-9d85-005956bb3a19" />.	(25)
+
+出勤的学生人数<img width="15" height="20" alt="image" src="https://github.com/user-attachments/assets/2720d281-e586-48c9-9f98-bacdfbb68b7a" />
+使用公式（26）（27）计算。
+
+<img width="120" height="35" alt="image" src="https://github.com/user-attachments/assets/3ec61c3b-d769-465e-8557-bf4c5fd4336d" />,	(26)
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/7075cc14-39c7-41fb-9ac1-c9bab773a707" />,	(27)
+
+其中，ϵ1∼N(0,0.03)，  <img width="13" height="20" alt="image" src="https://github.com/user-attachments/assets/1d8dc953-d3ea-44a5-8402-96d4ff369d6a" />
+为第t周的出勤率。t/T表示对教学周次进行归一化（如第9周/18周 = 0.5），用于后续模拟数据中的时间趋势。
+
+
+提问的学生人数<img width="18" height="20" alt="image" src="https://github.com/user-attachments/assets/71f34932-f201-499d-8c74-f31e8c296718" />
+使用公式（28）（29）计算。
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/c58471b1-7733-47da-b160-812bad51adf9" /> ,	(28)
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/628e42bb-8fa1-45e2-a040-61cffd48e185" />.	(29)
+
 提问率呈现周期性变化，中间（如第9周）达到高峰，前后低，模拟学生提问活跃度的变化。其中，ϵ2∼N(0,0.05)，ASKt为第t周的提问率。
-掌握情况未达标的学生比例 使用公式（30）计算。
-	 ,	(30)
+
+
+掌握情况未达标的学生比例<img width="18" height="20" alt="image" src="https://github.com/user-attachments/assets/388ac397-ec44-4847-a050-320407ce3736" />
+使用公式（30）计算。
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/5a26d88c-f90e-4d38-b8d9-cb317cd41d9a" />,	(30)
+
 其中，μ为该教师类型正态分布生成初始掌握情况未达标的学生数的均值，ϵ3∼N(0,σ)，σ为该教师类型生成初始掌握情况未达标的学生数的标准差。“合格/不合格”教师的掌握未达标率随着时间上升，“优秀/良好”教师的该比例稳定，仅有轻微波动，反映教师教学成效随时间的不同表现。
-学生满意度 使用公式（31）计算。
-	 .	(31)
+
+
+学生满意度<img width="18" height="20" alt="image" src="https://github.com/user-attachments/assets/2139c9f5-bec9-4766-b5c8-0aa0caedbc85" />
+使用公式（31）计算。
+
+<img width="150" height="35" alt="image" src="https://github.com/user-attachments/assets/1560e756-83e7-43a5-a14d-322d8095c02a" />，	(31)
+
 其中，μ为该教师类型正态分布生成的学生满意度的均值，ϵ4∼N(0,σ)，σ为该教师类型正态分布生成的学生满意度的标准差。“优秀”教师的满意度随时间上升，其他标签教师的满意度随时间下降，模拟了教师教学效果和学生体验感知的时间演化差异。
 
